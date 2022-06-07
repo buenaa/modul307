@@ -1,0 +1,46 @@
+[
+  {
+    "id": "2ae61f01-008c-4738-81f1-58b6b55a0ca9",
+    "menu": "1",
+    "side": {
+      "edamame": true,
+      "misoSoup": false,
+      "wakameSalad": false,
+      "gyoza": true
+    },
+    "comment": "This is a comment",
+    "date": "2022-06-06T22:06:36.456Z",
+    "user": {
+      "firstname": "Buena",
+      "lastname": "Vollenweider",
+      "email": "buena@vollenweider.co",
+      "tel": "0791234567",
+      "address": "Winterthurstrasse 28",
+      "city": "Winterthur",
+      "zip": "8400",
+      "newsletter": true
+    }
+  },
+  {
+    "id": "af91cee2-8a53-47e1-9b17-2a1468281ec4",
+    "menu": "1",
+    "side": {
+      "edamame": false,
+      "misoSoup": false,
+      "wakameSalad": false,
+      "gyoza": true
+    },
+    "comment": "text",
+    "date": "2022-06-07T12:43:36.515Z",
+    "user": {
+      "firstname": "Buena",
+      "lastname": "Vollenweider",
+      "email": "buena@vollenweider.co",
+      "tel": "0791234567",
+      "address": "Baumstrasse 3",
+      "city": "Winterthur",
+      "zip": "8400",
+      "newsletter": true
+    }
+  }
+]

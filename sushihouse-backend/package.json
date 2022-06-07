@@ -1,0 +1,26 @@
+{
+  "name": "sushihouse-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "server": "node server.js"
+  },
+  "author": "Buena Vollenweider",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/buenaa/modul307.git"
+  },
+  "bugs": {
+    "url": "https://github.com/buenaa/modul307/issues"
+  },
+  "homepage": "https://github.com/buenaa/modul307#readme",
+  "description": "",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "esm": "^3.2.25",
+    "express": "^4.18.1",
+    "uuid": "^8.3.2"
+  }
+}
