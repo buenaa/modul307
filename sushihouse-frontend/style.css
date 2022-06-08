@@ -1,0 +1,77 @@
+html, body .container-fluid{
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+.content {
+    z-index: 10;
+    position: relative;
+}
+
+.circle {
+    z-index: 1;
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    margin-left: -300px;
+    margin-top: 50px;
+    background-color: #FFC529;
+    border-radius: 100%;
+}
+
+#title {
+    font-family: 'Playfair Display', serif;
+    font-size: 150px;
+    line-height: 1;
+    margin-top: 180px;
+    margin-left: 100px;
+}
+
+.sushi-img {
+    padding: 0;
+}
+
+.urumaki {
+    margin-left: 100px;
+    margin-right: 30px;
+    width: 550px !important;
+}
+
+img.sushi-cutout {
+    width: 700px;
+    height: auto;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    color: #ffc529;
+    font-size: 100px;
+    margin-top: 120px;
+}
+
+h3 {
+    font-family: 'Playfair Display', serif;
+    color: #000000;
+    font-size: 50px;
+}
+
+form {
+    background-color: #ffe9be;
+    padding: 40px;
+    border-radius: 30px;
+    margin-left: 50px;
+    width: 650px !important;
+}
+
+p {
+    margin-left: 100px;
+}
+
+footer {
+    background-color: black;
+    color: #fff7ee;
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    height: 100px;
+}

@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"/>
+  <link href="style.css" rel="stylesheet"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+</head>
+<body>
+<div class="container-fluid">
+  <header>
+    <nav class="navbar navbar-expand-lg mx-5">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="assets/logo.jpg" alt="" width="50" class="d-inline-block align-text-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Menu</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="circle"></div>
+    <div class="content">
+      <div class="row">
+        <div class="col-6">
+          <h1 id="title">Sushi<br>House</h1>
+          <p class="mt-4 px-2">
+            Tasty Sushi Delivery Service! <br>
+            Purest Sushi Experience Focusing on Premium Quality Ingredients.
+          </p>
+        </div>
+        <div class="col-1">
+          <h2>寿司屋</h2>
+        </div>
+        <div class="col-5 d-flex justify-content-end sushi-img">
+          <img class="sushi-cutout" src="assets/sushi-cutout2.png">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-5">
+          <img src="assets/urumaki.jpg" class="img-fluid urumaki">
+        </div>
+        <div class="col-md-6 offset-1">
+          <form id="form" class="row g-3 col-12 mb-5">
+            <h3 col-md-8>Order now!</h3>
+            <div class="col-12">
+              <select id="select-menu" class="form-select form-select mb-3" aria-label=".form-select example">
+                <option selected value="0">Open this select menu</option>
+                <option value="1">Menu One</option>
+                <option value="2">Menu Two</option>
+                <option value="3">Menu Three</option>
+              </select>
+            </div>
+            <label  class="form-label">Choose at least one side</label>
+            <div class="col-md-3">
+              <input id="cb-edamame" class="form-check-input" type="checkbox" value="">
+              <label class="form-check-label" for="cb-edamame">
+                Edamame
+              </label>
+            </div>
+            <div class="col-md-3">
+              <input id="cb-miso-soup" class="form-check-input" type="checkbox" value="" >
+              <label class="form-check-label" for="cb-miso-soup">
+                Miso Soup
+              </label>
+            </div>
+            <div class="col-md-3">
+              <input id="cb-wakame-salad" class="form-check-input" type="checkbox" value="">
+              <label class="form-check-label" for="cb-wakame-salad">
+                Wakame salad
+              </label>
+            </div>
+            <div class="col-md-3">
+              <input id="cb-gyoza" class="form-check-input" type="checkbox" value="" >
+              <label class="form-check-label" for="cb-gyoza">
+                Gyoza
+              </label>
+            </div>
+            <div class="col-md-12">
+              <div class="mb-3">
+                <label for="tf-comment" class="form-label">Comment</label>
+                <textarea class="form-control" id="tf-comment" rows="3"></textarea>
+              </div>
+            </div>
+            <div class="col-md-6 has-validation">
+              <label for="input-firstname" class="form-label">Firstname</label>
+              <input type="text" class="form-control" id="input-firstname">
+              <div class="invalid-feedback">
+                Please enter a valid firstname:
+                <ul>
+                  <li>Min. 2 characters</li>
+                  <li>No numbers</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6 has-validation">
+              <label for="input-lastname" class="form-label">Lastname</label>
+              <input type="text" class="form-control" id="input-lastname">
+              <div class="invalid-feedback">
+                Please enter a valid lastname:
+                <ul>
+                  <li>Min. 2 characters</li>
+                  <li>No numbers</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="input-email" class="form-label">Email</label>
+              <input type="text" class="form-control" id="input-email">
+            </div>
+            <div class="col-md-6 has-validation">
+              <label for="input-tel" class="form-label">Telephone</label>
+              <input type="text" class="form-control" id="input-tel" placeholder="0791234567">
+              <div class="invalid-feedback">
+                Please enter a valid telephone number:
+                <ul>
+                  <li>Only numbers</li>
+                  <li>Length must be 10</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12">
+              <label for="input-address" class="form-label">Address</label>
+              <input type="text" class="form-control" id="input-address" placeholder="Musterstrasse 30">
+            </div>
+            <div class="col-md-6">
+              <label for="input-city" class="form-label">City</label>
+              <input type="text" class="form-control" id="input-city">
+            </div>
+            <div class="col-md-6">
+              <label for="input-zip" class="form-label">Zip</label>
+              <input type="number" class="form-control" id="input-zip" placeholder="0000" min="1000" max="9999">
+            </div>
+            <div class="col-12">
+              <input id="cb-newsletter" class="form-check-input" type="checkbox">
+              <label class="form-check-label" for="cb-newsletter">
+                Subscribe to our newsletter
+              </label>
+            </div>
+            <div class="col-12">
+              <button id="button-send" type="submit" class="btn btn-primary">Send</button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+  <footer>
+    <div class="d-flex justify-content-center">
+      <p class="mt-5">
+        Mady by Buena Vollenweider
+      </p>
+
+    </div>
+  </footer>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+<script src="validation.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
